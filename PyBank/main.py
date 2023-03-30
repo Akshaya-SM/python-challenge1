@@ -43,21 +43,17 @@ with open(csvpath,"r") as csvfile:
             revenue_change = float(row[1]) - current_revenue
             #revenue_change_list = revenue_change_list + [revenue_change]
             revenue_change_list.append(revenue_change)
-        #print(revenue_change)
         current_revenue = float(row[1])
         #print(current_revenue)
         
      # To calulate Average of revenue we need to store it in a [list] and use them.
         #revenue_change_list= []
-        
-            
+          
         revenue_sum += revenue_change 
         print(revenue_change)
         
-        print(revenue_change_list)
-        print(len(revenue_change_list))
-
-    
+        #print(revenue_change_list)
+        #print(len(revenue_change_list))   
         #average_revenue_change = revenue_change_list.sum()/len(revenue_change_list)
 
      # The greatest increase in profits (date and amount) over the entire period
