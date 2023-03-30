@@ -2,7 +2,7 @@ import os
 import csv
 
 # Set path for csv file
-csvpath = os.path.join("Resources","budget_data.csv")
+csvpath = os.path.join("PyBank","Resources","budget_data.csv")
 print(csvpath)
 # C:\Users\aksha\git\datanalysisBC\python-challenge1\PyBank\Resources\budget_data.csv
 
@@ -86,13 +86,12 @@ output.append("Average Revenue Change : $" + str(average_revenue_change))
 output.append("Greatest Increase in Revenue: " + greatest_increase[0] +"   $ " + str(greatest_increase[1]))
 output.append("Greatest Decrease in Revenue: " + greatest_decrease[0] +"   $ " + str(greatest_decrease[1]))
 
-#x=["a","b","c","d","e"]
 
 print("\n".join(output))
 
 # Write the Analysis results to the textfile
 
-txt_path= os.path.join("Analysis","pyBank_output.txt")
+txt_path= os.path.join("PyBank","Analysis","pyBank_output.txt")
 
 with open(txt_path, 'w') as textfile:
     textfile.write("\n".join(output))

@@ -2,7 +2,7 @@ import os
 import csv
 
 #Set path for csv file
-csvpath = os.path.join('Resources','election_data.csv')
+csvpath = os.path.join('PyPoll','Resources','election_data.csv')
 print(csvpath)
 
 # Initialize the variables 
@@ -78,7 +78,7 @@ with open(csvpath) as csvfile:
 '''        
 
 # Export the results to a text file
-txt_path= os.path.join("Analysis","poll_output.txt")
+txt_path= os.path.join("PyPoll","Analysis","poll_output.txt")
 
 with open(txt_path, 'w') as textfile:
     textfile.write(f"Election Results\n")
